@@ -1,55 +1,100 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(58, 57, 57) !important;
+  background-color: #3a3939 !important;
 }
 
 .main {
   height: 100vh;
 }
+
 .main .call-screen {
   background-color: #212529;
   border-radius: 20px;
 }
-@media (max-width: 425px) {
-  .main .call-screen .deneme {
+
+@media (max-width: 426px) {
+  .main .call-screen .top-menu {
+    display: block !important;
+    position: absolute;
+    z-index: 1;
+  }
+  .main .call-screen div {
     display: block !important;
   }
+  .main .call-screen div .square {
+    display: block !important;
+  }
+  .main .call-screen .invite {
+    background-color: transparent !important;
+    border: none !important;
+    margin-left: 0px !important;
+  }
+  .main .call-screen .settings {
+    background-color: transparent !important;
+    border: none !important;
+    margin-left: 0px !important;
+  }
 }
+
 .main .call-screen .dropdown .settings {
-  background-color: rgb(33, 33, 33);
-  padding: 15px 20px 15px 20px !important;
-  border: 1px solid rgb(155, 155, 155) !important;
+  background-color: #212121;
+  padding: 15px 20px 15px 20px;
+  border: 1px solid #9b9b9b;
   color: #748cab;
   border-radius: 13px;
 }
+
 .main .call-screen .invite {
   margin-left: 10px;
-  background-color: rgb(33, 33, 33);
-  border: 1px solid rgb(155, 155, 155) !important;
+  background-color: #212121;
+  border: 1px solid #9b9b9b;
   border-radius: 13px;
-  padding: 15px 20px 15px 20px !important;
+  padding: 15px 20px 15px 20px;
   color: #08a045;
 }
+
 .main .call-screen .square {
   font-size: 30px;
 }
-.main .call-screen .square i {
+
+.main .call-screen .square div {
   padding-left: 15px;
 }
-.main .call-screen .square i:nth-child(1) {
+
+.main .call-screen .square div:nth-child(1) {
   color: #fff !important;
 }
-.main .call-screen .square i:nth-child(2) {
+
+.main .call-screen .square div:nth-child(2) {
   color: #fff !important;
 }
-.main .call-screen .square i:nth-child(3) {
+
+.main .call-screen .square div:nth-child(3) {
   color: #fb8500 !important;
 }
+
 .main .call-screen .clock {
-  color: rgb(250, 19, 19);
-}/*# sourceMappingURL=style.css.map */
+  color: #fa1313;
+}
+
+.main .call-screen .users img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.main .call-screen .users .name {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  padding: 10px 15px 10px 15px;
+  background-color: #08a045;
+  opacity: 0.6;
+}
+/*# sourceMappingURL=style.css.map */

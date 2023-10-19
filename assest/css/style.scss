@@ -15,16 +15,35 @@ body {
   .call-screen {
     background-color: $screen;
     border-radius: 20px;
-    @media (max-width: 425px) {
-        .deneme {
+    @media (max-width: 426px) {
+        .top-menu {
           display: block !important;
+          position: absolute;
+          z-index: 1;
         }
+        div{
+          display: block !important;
+          .square{
+            display: block !important;
+          }
+        }
+        .invite{
+          background-color: transparent !important;
+          border: none !important;
+          margin-left: 0px !important;
+        }
+        .settings{
+          background-color: transparent !important;
+          border: none !important;
+          margin-left: 0px !important;
+        }
+
       }
     .dropdown {
       .settings {
         background-color: $btn-color;
-        padding: 15px 20px 15px 20px !important;
-        border: 1px solid rgb(155, 155, 155) !important;
+        padding: 15px 20px 15px 20px;
+        border: 1px solid rgb(155, 155, 155) ;
         color: #748cab;
         border-radius: 13px;
       }
@@ -32,14 +51,14 @@ body {
     .invite {
       margin-left: 10px;
       background-color: $btn-color;
-      border: 1px solid rgb(155, 155, 155) !important;
+      border: 1px solid rgb(155, 155, 155);
       border-radius: 13px;
-      padding: 15px 20px 15px 20px !important;
+      padding: 15px 20px 15px 20px;
       color: #08a045;
     }
     .square {
       font-size: 30px;
-      i {
+      div {
         padding-left: 15px;
         &:nth-child(1) {
           color: #fff !important;
@@ -54,6 +73,21 @@ body {
     }
     .clock {
       color: $red;
+    }
+    .users{
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+      }
+      .name{
+        position: absolute;
+        color:#fff ;
+        z-index: 1;
+        padding: 10px 15px 10px 15px;
+        background-color: #08a045;
+        opacity: 0.6;
+      }
     }
   }
 }
