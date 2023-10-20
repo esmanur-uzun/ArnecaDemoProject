@@ -19,65 +19,92 @@
   <body>
     <div class="container-fluid">
       <div class="row main justify-content-around align-items-center">
-        <div class="call-screen col-lg-7 col-12">
-          <div class="d-flex top-menu mt-4 justify-content-between">
-            <div class="d-flex justify-content-around">
-              <div class="dropdown">
-                <a
-                  class="btn btn-secondary dropdown-toggle settings"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+        <div class=" col-lg-7 col-12">
+          <div class="call-screen">
+            <div class="d-flex top-menu mt-4 justify-content-between">
+              <div class="d-flex justify-content-around">
+                <div class="dropdown">
+                  <a
+                    class="btn btn-secondary dropdown-toggle settings"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    Settings
+                  </a>
+  
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="btn invite">
+                  <i class="fa fa-plus-square" aria-hidden="true"></i>
+                  Invite
+                </button>
+                <div
+                  class="d-flex justify-content-around align-items-center square"
                 >
-                  <i class="fa fa-cog" aria-hidden="true"></i>
-                  Settings
-                </a>
-
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
+                  <div><i class="fa fa-square" aria-hidden="true"></i></div>
+                  <div><i class="fa fa-square" aria-hidden="true"></i></div>
+                  <div><i class="fa fa-square" aria-hidden="true"></i></div>
+                </div>
               </div>
-              <button type="button" class="btn invite">
-                <i class="fa fa-plus-square" aria-hidden="true"></i>
-                Invite
-              </button>
-              <div
-                class="d-flex justify-content-around align-items-center square"
-              >
-                <div><i class="fa fa-square" aria-hidden="true"></i></div>
-                <div><i class="fa fa-square" aria-hidden="true"></i></div>
-                <div><i class="fa fa-square" aria-hidden="true"></i></div>
+              <div class="clock d-flex align-items-center">
+                <span>
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+                  19:45
+                </span>
               </div>
             </div>
-            <div class="clock d-flex align-items-center">
-              <span>
-                <i class="fa fa-circle" aria-hidden="true"></i>
-                19:45
-              </span>
+            <div class="users mt-3 d-flex flex-wrap row">
+              <div class="col-lg-6 mb-4">
+                <div class="name d-flex justify-content-center">You</div>
+                <img src="./assest/medias/good-faces-DSj40n6beGk-unsplash.jpg" alt="">
+              </div>
+              <div class="col-lg-6 mb-4 ">
+                <div class="name">Maddy Thompson</div>
+                <img src="./assest/medias/linkedin-sales-solutions-VtKoSy_XzNU-unsplash.jpg" alt="">
+              </div>
+              <div class="col-lg-6 mb-4 ">
+                <div class="name">Ruth Hoffman</div>
+                <img src="./assest/medias/magnet-me-JUpaXbh-Fgc-unsplash.jpg" alt="">
+              </div>
+              <div class="col-lg-6 mb-4 ">
+                <div class="name">Jack Spencer</div>
+                <img src="./assest/medias/malte-helmhold-m0r4a8nMarw-unsplash.jpg" alt="">
+              </div>
             </div>
           </div>
-          <div class="users mt-3 d-flex flex-wrap">
-            <div class="col-lg-6 mb-4">
-              <div class="name">You</div>
-              <img src="./assest/medias/good-faces-DSj40n6beGk-unsplash.jpg" alt="">
-            </div>
-            <div class="col-lg-6 mb-4">
-              <div class="name">Maddy Thompson</div>
-              <img src="./assest/medias/linkedin-sales-solutions-VtKoSy_XzNU-unsplash.jpg" alt="">
-            </div>
-            <div class="col-lg-6 mb-4 ">
-              <div class="name">Ruth Hoffman</div>
-              <img src="./assest/medias/magnet-me-JUpaXbh-Fgc-unsplash.jpg" alt="">
-            </div>
-            <div class="col-lg-6 mb-4">
-              <div class="name">Jack Spencer</div>
-              <img src="./assest/medias/malte-helmhold-m0r4a8nMarw-unsplash.jpg" alt="">
-            </div>
+          <div class="call-control d-flex justify-content-center flex-wrap">
+            <button type="button" class="btn call-btn">
+              <i class="fa fa-camera" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn call-btn">
+              <i class="fa fa-microphone" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn call-btn">
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+
+            </button>
+            <button type="button" class="btn call-btn">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              End Call
+            </button>
+            <button type="button" class="btn call-btn">
+              <i class="fa fa-book" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn call-btn">
+              <i class="fa fa-square" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn call-btn">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
           </div>
         </div>
         <div class="col-lg-4">One of two columns</div>

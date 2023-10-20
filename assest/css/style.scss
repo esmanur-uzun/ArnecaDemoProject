@@ -2,6 +2,7 @@ $b-color: rgb(58, 57, 57);
 $btn-color: rgb(33, 33, 33);
 $red: rgb(250, 19, 19);
 $screen: #212529;
+$border-color: rgb(155, 155, 155);
 * {
   margin: 0px;
   padding: 0px;
@@ -15,6 +16,7 @@ body {
   .call-screen {
     background-color: $screen;
     border-radius: 20px;
+    padding:5px 30px 5px 30px;
     @media (max-width: 426px) {
         .top-menu {
           display: block !important;
@@ -43,7 +45,7 @@ body {
       .settings {
         background-color: $btn-color;
         padding: 15px 20px 15px 20px;
-        border: 1px solid rgb(155, 155, 155) ;
+        border: 1px solid $border-color ;
         color: #748cab;
         border-radius: 13px;
       }
@@ -75,19 +77,43 @@ body {
       color: $red;
     }
     .users{
+      
       img{
         width: 100%;
-        height: 100%;
+        object-fit: cover;
         border-radius: 15px;
       }
+      
       .name{
         position: absolute;
-        color:#fff ;
         z-index: 1;
+        color:#fff ;
         padding: 10px 15px 10px 15px;
-        background-color: #08a045;
+        background-color: $btn-color;
         opacity: 0.6;
+        right: 0;
+        border-radius: 10px;
       }
     }
   }
+  .call-control{
+    .call-btn{
+      margin: 10px;
+      i{
+        color: #fff;
+      }
+      padding: 15px 20px 15px 20px;
+      background-color: transparent;
+      border: 1px solid $border-color;
+      &:nth-child(4){
+        padding-left: 35px;
+        padding-right: 35px;
+        background-color: $red;
+        color: #fff;
+        border: none;
+      }
+    }
+    
+  }
+  
 }

@@ -1,23 +1,21 @@
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #3a3939 !important;
+  background-color: rgb(58, 57, 57) !important;
 }
 
 .main {
   height: 100vh;
 }
-
 .main .call-screen {
   background-color: #212529;
   border-radius: 20px;
+  padding: 5px 30px 5px 30px;
 }
-
 @media (max-width: 426px) {
   .main .call-screen .top-menu {
     display: block !important;
@@ -41,60 +39,68 @@ body {
     margin-left: 0px !important;
   }
 }
-
 .main .call-screen .dropdown .settings {
-  background-color: #212121;
+  background-color: rgb(33, 33, 33);
   padding: 15px 20px 15px 20px;
-  border: 1px solid #9b9b9b;
+  border: 1px solid rgb(155, 155, 155);
   color: #748cab;
   border-radius: 13px;
 }
-
 .main .call-screen .invite {
   margin-left: 10px;
-  background-color: #212121;
-  border: 1px solid #9b9b9b;
+  background-color: rgb(33, 33, 33);
+  border: 1px solid rgb(155, 155, 155);
   border-radius: 13px;
   padding: 15px 20px 15px 20px;
   color: #08a045;
 }
-
 .main .call-screen .square {
   font-size: 30px;
 }
-
 .main .call-screen .square div {
   padding-left: 15px;
 }
-
 .main .call-screen .square div:nth-child(1) {
   color: #fff !important;
 }
-
 .main .call-screen .square div:nth-child(2) {
   color: #fff !important;
 }
-
 .main .call-screen .square div:nth-child(3) {
   color: #fb8500 !important;
 }
-
 .main .call-screen .clock {
-  color: #fa1313;
+  color: rgb(250, 19, 19);
 }
-
 .main .call-screen .users img {
   width: 100%;
-  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
-
 .main .call-screen .users .name {
   position: absolute;
-  color: #fff;
   z-index: 1;
+  color: #fff;
   padding: 10px 15px 10px 15px;
-  background-color: #08a045;
+  background-color: rgb(33, 33, 33);
   opacity: 0.6;
+  right: 0;
+  border-radius: 10px;
 }
-/*# sourceMappingURL=style.css.map */
+.main .call-control .call-btn {
+  margin: 10px;
+  padding: 15px 20px 15px 20px;
+  background-color: transparent;
+  border: 1px solid rgb(155, 155, 155);
+}
+.main .call-control .call-btn i {
+  color: #fff;
+}
+.main .call-control .call-btn:nth-child(4) {
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: rgb(250, 19, 19);
+  color: #fff;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
