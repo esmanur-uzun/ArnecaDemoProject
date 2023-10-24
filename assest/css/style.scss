@@ -12,7 +12,8 @@ body {
   background-color: $b-color !important;
 }
 .main {
-  height: 100vh;
+  height: 65vh;
+  
   .call-screen {
     background-color: $screen;
     border-radius: 20px;
@@ -137,8 +138,13 @@ body {
     }
   }
   .chat-container{
-    height: 65vh;
+    height: 480px;
     overflow-y: scroll;
+    @media (max-width: 1025px){
+      &{
+        height: 350px;
+      }
+    }
     &::-webkit-scrollbar {
       width: 3px;
       background-color: $border-color;

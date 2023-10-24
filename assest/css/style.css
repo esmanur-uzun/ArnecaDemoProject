@@ -9,7 +9,7 @@ body {
 }
 
 .main {
-  height: 100vh;
+  height: 65vh;
 }
 .main .call-screen {
   background-color: #212529;
@@ -125,8 +125,13 @@ body {
   color: #fff;
 }
 .main .chat-container {
-  height: 65vh;
+  height: 480px;
   overflow-y: scroll;
+}
+@media (max-width: 1025px) {
+  .main .chat-container {
+    height: 350px;
+  }
 }
 .main .chat-container::-webkit-scrollbar {
   width: 3px;
